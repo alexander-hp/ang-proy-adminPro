@@ -1,0 +1,19 @@
+<h1>HÉROES DE: <small>MARVEL Y DC</small> </h1>
+<hr>
+
+<!-- Podemos poner una pagina tipo pinterest con cards column de bootstrap -->
+<div class="card-columns">
+
+  <!-- *ngFor="let heroes of heroes; let i = index" -->
+    
+
+  <app-heroe-tarjeta (heroeSeleccionado)="verHeroes( $event )" [heroes]="heroes" [index]="i" *ngFor="let heroes of heroes; let i = index"></app-heroe-tarjeta>
+
+        <!-- <a [routerLink]= "['/heroe', i]" class="btn btn-outline-primary btn-block"> ver más link... </a> -->
+
+
+
+</div>
+
+
+
